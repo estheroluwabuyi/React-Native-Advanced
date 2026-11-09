@@ -1,17 +1,8 @@
-import { Text, View, Image, StyleSheet } from "react-native";
+import { Link } from "expo-router";
+import { Text, View, Image, StyleSheet, Pressable } from "react-native";
 
 const Home = () => {
   return (
-    // <View className=" bg-blue-700 flex-1 flex-col p-5 gap-2">
-    //   <ImageBackground
-    //     source={require("@/assets/images/coffee-6.jpg")}
-    //     resizeMode="cover"
-    //     className="w-full h-full flex-1 object-cover justify-center items-center"
-    //   >
-    //     <Text className="text-[#ffffffd0] ">Coffee Shop</Text>
-    //   </ImageBackground>
-    // </View>
-
     <View className="flex-1">
       <Image
         source={require("@/assets/images/coffee-4.jpg")}
@@ -21,13 +12,20 @@ const Home = () => {
       />
 
       <View className="flex-1 p-5 justify-center items-center bg-black/25">
-        <Text className="text-white text-[1.7rem] font-bold">
+        <Text className="text-white text-[1.7rem] font-bold tracking-wide">
           The Coffee Shop
         </Text>
 
-        <Text className="text-white text-center text-[1.1rem]">
+        <Text className="text-white text-center text-[1.05rem]">
           Your favourite coffee, one cup at a time.
         </Text>
+        <Link href="/explore" asChild>
+          <Pressable className="px-3 py-2 mt-5  rounded-md bg-[#6f4e37] items-center justify-center">
+            <Text className="text-white text-[1.5rem] font-bold text-center">
+              Grab a Cup
+            </Text>
+          </Pressable>
+        </Link>
       </View>
     </View>
   );
