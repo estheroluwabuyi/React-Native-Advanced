@@ -5,7 +5,7 @@
     "scheme": "my-app",
     "version": "1.0.0",
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/images/coffee-icon.png"
     },
     "experiments": {
       "tsconfigPaths": true,
@@ -15,24 +15,38 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/splash.png",
-          "backgroundColor": "#ffffff"
+          "image": "./assets/images/coffee-ill.png",
+          "backgroundColor": "#000000",
+          "imageWidth": 200
         }
       ],
       "expo-status-bar",
       "expo-router"
     ],
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/coffee-icon.png",
     "userInterfaceStyle": "light",
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/images/coffee-ill.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.anonymous.myapp"
+    },
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "205d2e91-69d6-49f5-8b3b-0d68a7aa98a0"
       }
     }
   }
