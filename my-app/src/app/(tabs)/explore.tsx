@@ -2,7 +2,7 @@ import { View, Text } from "react-native";
 
 const Explore = () => {
   return (
-    <View>
+    <View className="p-5">
       <Text>Explore</Text>
     </View>
   );
