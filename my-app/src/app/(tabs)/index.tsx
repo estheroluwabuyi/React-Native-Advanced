@@ -16,7 +16,7 @@ const Home = () => {
           The Coffee Shop
         </Text>
 
-        <Text className="text-white text-center text-[1.05rem]">
+        <Text className="text-white text-center text-[1.03rem]">
           Your favourite coffee, one cup at a time.
         </Text>
         <Link href="/explore" asChild>

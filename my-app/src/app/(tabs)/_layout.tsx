@@ -9,13 +9,11 @@ const TabLayout = () => {
         headerShown: false,
         tabBarStyle: {
           backgroundColor: "#6f4e37",
-          paddingTop: 10,
-          paddingBottom: 10,
           height: 70,
           borderTopWidth: 0,
         },
         tabBarLabelStyle: {
-          fontSize: 12,
+          fontSize: 16,
           fontWeight: "600",
         },
       }}
